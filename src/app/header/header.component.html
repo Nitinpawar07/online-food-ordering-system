@@ -1,0 +1,18 @@
+<header class="header">
+    <h1 class="project-title"><span style="color: brown;">O</span>nline <span style="color: brown;">F</span>ood <span style="color: brown;">O</span>rdering <span style="color: brown;">S</span>ystem</h1>
+    <nav class="nav-bar">
+
+        <ul class="menu-list">
+            <li class="list-item"><a routerLink=""> Home </a></li>
+            <li class="list-item"><a > About </a></li>
+            <li class="list-item"><a > All Products </a></li>
+            <li class="list-item" ><a routerLink="customer-login"> Customer Login</a></li>
+            <li class="list-item" ><a routerLink="customer-registration"> Registration</a> </li>
+            <li class="list-item"><a > Contact </a></li>
+        </ul>
+
+        <p   *ngIf="status=='true'"  class="username">Welcome {{loginUser}}</p>
+        <button *ngIf="status=='true'" (click)="logout()" class="logout-button" >Logout</button>
+        
+    </nav>
+</header>  
